@@ -1,4 +1,4 @@
-local Triple = {}
+local AutoParryHelper = {}
 
 local Players = game:GetService("Players")
 
@@ -19,4 +19,5 @@ function nurysium_module.getBall()
     end
 end
 
-return Triple
+return AutoParryHelper
+
