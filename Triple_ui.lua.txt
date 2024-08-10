@@ -1,4 +1,4 @@
-local TripleUI = {}
+local Triple_UI = {}
 
 local tween_service = game:GetService("TweenService")
 local user_input = game:GetService("UserInputService")
@@ -776,6 +776,6 @@ function nurysium: create_toggle(name: string, section_name: string, callback)
 
 end
 
-return TripleUI
+return Triple_UI
 
 
