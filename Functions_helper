@@ -1,0 +1,56 @@
+local helper = {}
+
+local Stats = game:GetService('Stats')
+
+local Players = game:GetService('Players')
+
+local RunService = game:GetService('RunService')
+
+local ReplicatedStorage = game:GetService('ReplicatedStorage')
+
+local TweenService = game:GetService('TweenService')
+
+local Nurysium_Util = loadstring(game:HttpGet('https://raw.githubusercontent.com/TripleScript/TripleHub/main/Triple_helper.lua'))()
+
+local local_player = Players.LocalPlayer
+
+local camera = workspace.CurrentCamera
+
+local nurysium_Data = nil
+
+local hit_Sound = nil
+
+local closest_Entity = nil
+
+local parry_remote = nil
+
+getgenv().aura_Enabled = false
+
+getgenv().hit_sound_Enabled = false
+
+getgenv().hit_effect_Enabled = false
+
+getgenv().night_mode_Enabled = false
+
+getgenv().trail_Enabled = false
+
+getgenv().self_effect_Enabled = false
+
+getgenv().kill_effect_Enabled = false
+
+getgenv().shaders_effect_Enabled = false
+
+getgenv().ai_Enabled = false
+
+getgenv().spectate_Enabled = false
+
+local Services = {
+
+	game:GetService('AdService'),
+
+	game:GetService('SocialService')
+
+}
+
+return helper
+
