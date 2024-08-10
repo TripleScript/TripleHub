@@ -10,8 +10,6 @@ local ReplicatedStorage = game:GetService('ReplicatedStorage')
 
 local TweenService = game:GetService('TweenService')
 
-local Nurysium_Util = loadstring(game:HttpGet('https://raw.githubusercontent.com/TripleScript/TripleHub/main/Triple_helper.lua'))()
-
 local local_player = Players.LocalPlayer
 
 local camera = workspace.CurrentCamera
