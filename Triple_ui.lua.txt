@@ -11,16 +11,6 @@ local ui_data = {
 	current_section = "nil"
 }
 
-local color_shader = Instance.new("ColorCorrectionEffect", workspace.CurrentCamera)
-local blur_shader = Instance.new("BlurEffect", workspace.CurrentCamera)
-
-local is_Mobile = game:GetService("UserInputService").TouchEnabled
-
-if not is_Mobile then
-	blur_shader.Size = 256
-	color_shader.Saturation = -1
-end
-
 local function animate_elements(speed: number)
 	ui.Background["functions_frame"].UIListLayout.Padding = UDim.new(0.45, 0)
 
@@ -480,7 +470,7 @@ function triple: init(name: string, is_draggable: boolean, parent)
 	task.defer(function()
 		uiVisible.TouchTap:Connect(function()
 			if not ui.Enabled then
-				nurysium:open()
+				triple:open()
 
 				task.delay(0.15, function()
 					ui.Enabled = true
@@ -496,7 +486,7 @@ function triple: init(name: string, is_draggable: boolean, parent)
 
 		uiVisible.MouseButton1Up:Connect(function()
 			if not ui.Enabled then
-				nurysium:open()
+				triple:open()
 
 				task.delay(0.15, function()
 					ui.Enabled = true
@@ -514,7 +504,7 @@ function triple: init(name: string, is_draggable: boolean, parent)
 			if not is_event and (input.KeyCode == Enum.KeyCode.RightShift or input.KeyCode == Enum.KeyCode.Insert)  then
 
 				if not ui.Enabled then
-					nurysium:open()
+					triple:open()
 
 					task.delay(0.15, function()
 						ui.Enabled = true
