@@ -11,16 +11,6 @@ local ui_data = {
 	current_section = "nil"
 }
 
-local color_shader = Instance.new("ColorCorrectionEffect", workspace.CurrentCamera)
-local blur_shader = Instance.new("BlurEffect", workspace.CurrentCamera)
-
-local is_Mobile = game:GetService("UserInputService").TouchEnabled
-
-if not is_Mobile then
-	blur_shader.Size = 256
-	color_shader.Saturation = -1
-end
-
 local function animate_elements(speed: number)
 	ui.Background["functions_frame"].UIListLayout.Padding = UDim.new(0.45, 0)
 
@@ -777,3 +767,6 @@ function nurysium: create_toggle(name: string, section_name: string, callback)
 end
 
 return nurysium
+
+
+
