@@ -1,3 +1,5 @@
+local parry = {}
+
 local function get_closest_entity(Object: Part)
 
 	task.spawn(function()
@@ -315,3 +317,7 @@ task.spawn(function()
 end)
 
 initializate('nurysium_temp')
+
+return parry
+
+
