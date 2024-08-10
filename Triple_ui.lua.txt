@@ -776,6 +776,6 @@ function nurysium: create_toggle(name: string, section_name: string, callback)
 
 end
 
-return Triple_UI
+return triple
 
 
