@@ -1,5 +1,4 @@
 
-getgenv().namehub = "Triple Hub"
 local UserInputService = game:GetService('UserInputService')
 local LocalPlayer = game:GetService('Players').LocalPlayer
 local TweenService = game:GetService('TweenService')
