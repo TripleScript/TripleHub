@@ -6,7 +6,6 @@ local CoreGui = game:GetService('CoreGui')
 
 local Mouse = LocalPlayer:GetMouse();
 
-
 local Library = {
 	connections = {};
     Flags = {};
